@@ -9,3 +9,4 @@ const hasDuplicate = function (num) {
 
 console.log(hasDuplicate([1, 2, 3, 4]));
 console.log(hasDuplicate([1, 2, 3, 3]));
+console.log(":::");
