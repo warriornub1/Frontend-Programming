@@ -1,25 +1,25 @@
 const encode = function(strs){
-    let s = "";
+    let result = "";
     for(let str of strs){
-        s += str.length + "#" + str;
+        result += `${str.length}#${str}`;
     }
-    return s;
+    return result;
 }
 
 const decode = function(strs){
     let i = 0;
-    let result = [];
+    let res = [];
     while(i < strs.length){
         let j = i;
         while(strs[j] != '#'){
             j++;
         }
-        let length = parseInt(strs.slice(i,j));
+        let length = parseInt(strs.slice(i, j));
         i = j + 1;
-        result.push(strs.substring(i, i + length));
+        res.push(strs.slice(i, i+length));
         i += length;
     }
-    return result;
+    return res;
 }
 
 let result = encode(["neet","code","love","you"]);
