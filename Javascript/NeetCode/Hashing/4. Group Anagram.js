@@ -1,4 +1,25 @@
 var groupAnagrams = function(strs){
+    
+    let hashmap = {}
+    for(let str of strs)
+    {
+        //let key = str.split('').sort().join('');
+        const key1 = Array(26).fill(0);
+        for(let c of str){
+            key1[c.charCodeAt(0) - 'a'.charCodeAt(0)]++;
+        }
+        let key = key1.join('');
+        if(!hashmap[key])
+            hashmap[key] = [];
+        hashmap[key].push(str);
+    }
+    return Object.values(hashmap);
+};
+
+console.log(groupAnagrams(["act","pots","tops","cat","stop","hat"]));
+
+/*
+var groupAnagrams = function(strs){
     const map = new Map();
     for(const s of strs){
         
@@ -15,5 +36,4 @@ var groupAnagrams = function(strs){
     }
     return Object.values(map);
 };
-
-console.log(groupAnagrams(["act","pots","tops","cat","stop","hat"]));
+*/

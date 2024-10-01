@@ -1,0 +1,37 @@
+let msg = "you are so grounded mr"
+msg.toUpperCase();
+msg.toUpperCase();
+msg.trim();
+
+"baseball".indexOf("ball"); // 4
+"baseball".indexOf("z");  // -4
+
+"baseball".slice(4); // take slice from index 4 till the end
+"baseball".slice(0, 4) //start and where it ends base
+
+"Baseball is entertaining".replace('entertaining', 'ok');
+'ha ha ha'.replace('ha', 'hee'); // replace first occurance
+
+
+// String Escape Characters
+
+'he said I ain\'t happy'
+"he said \"I aint happy\""
+"he said \"I ain't happy\""
+
+"\t ha" // tab space
+"\\" // single backslash
+
+// String Template Literals
+`I counted ${3 + 4} sheep`;
+
+let animal = "pig";
+`${animal} say hi`;
+
+
+// Primitive Types Number, String, Boolean, Null, Undefined, *Symbol and Big Int
+// Null 1) Intentional absence of any value 2) Must be assigned
+let name = null;
+
+// Undefined 1) Variables that do not have an assigned value are undefined
+"lol"[4];
