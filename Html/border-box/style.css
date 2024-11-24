@@ -1,0 +1,23 @@
+body {
+  background: #efefef;
+  color: #333;
+}
+
+.scale {
+  width: 500px;
+  height: 50px;
+  background: #615756;
+}
+
+.content-box {
+  width: 500px;
+  border: 5px solid red;
+  background: #4dfff3;
+}
+
+.border-box {
+  box-sizing: border-box;
+  width: 500px;
+  padding: 25px;
+  background: #52ffb8;
+}
