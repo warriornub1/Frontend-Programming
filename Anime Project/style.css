@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
+
+:root{
+    --red: #e50914;
+    --yellow: #F5CF49;
+    --black: #000000;
+    --blue: blue;
+    --light-color: #181818;
+    --box-shadow: 0 0.5rem 1.5rem;
+}
+
+*{
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    list-style-type: none;
+    font-size: 70%;
+    transition: all 0.2 linear;
+}
+
+body{
+    background: linear-gradient(45deg, #010758, #490d61);
+}
+
+/* Header */
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    background-color: var(--light-color);
+    box-shadow: var(--box-shadow);
+    position: fixed;
+}
+
+header .logo{
+    color: var(--yellow);
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+}
+
+header nav ul a {
+    font-size: 2.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 3rem;
+    color: var(--yellow);
+}
+
+header nav ul a:hover {
+    color: var(--red);
+    background-color: #fff;
+}
+
+form input[type="text"]{
+    border-width: 2px;
+    border-color: var(--yellow);
+    border-style: solid;
+    font-size: 2rem;
+    padding: 0.5rem 3rem;
+    border-radius: 4px;
+    text-align: left;
+    padding-left: 1rem;
+    background-color: #fff;
+}
+
+/* Swiper */
+.home .box{
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-size: cover !important;
+    background-position: center !important;
+    justify-content: flex-start;
+    padding: 2rem 9%;
+    margin: 0 auto;
+}
+
+.home .box.second {
+    justify-content: flex-end;
+}
+  
+.home .box .content {
+    width: 50rem;
+}
+  
+.home .box .content h3 {
+font-size: 6rem;
+color: #fff;
+padding-top: 0.5rem;
+text-transform: uppercase;
+}
+  
+.home .box .content p {
+    line-height: 2;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+/* Newly Release */
+.newly-release-container{
+    text-align: center;
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    place-items: center;
+}
+
+.newly-release-content{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    color: var(--black);
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(78, 73, 73, 0.1), -5px -5px 10px rgba(34, 34, 34, 0.5);
+    cursor: pointer;
+    max-width: 350px;
+}
+
+.newly-release-content img{
+    height: 300px;
+    background-size: cover !important;
+    background-position: center !important;
+}
